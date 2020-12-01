@@ -15,7 +15,7 @@
 #
 
 # Check for the target product.
-ifeq (pa_rolex,$(TARGET_PRODUCT))
+ifeq (pa_riva,$(TARGET_PRODUCT))
 
 # Inherit from those products. Most specific first.
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
@@ -23,30 +23,30 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base_telephony.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_m.mk)
 
 # Inherit device configuration
-$(call inherit-product, device/xiaomi/rolex/device.mk)
+$(call inherit-product, device/xiaomi/riva/device.mk)
 
 # Inherit common PA configuration
 $(call inherit-product, vendor/pa/config/common_full_phone.mk)
 
 # Device identifier. This must come after all inclusions
 PRODUCT_BRAND := Xiaomi
-PRODUCT_DEVICE := rolex
+PRODUCT_DEVICE := riva
 PRODUCT_MANUFACTURER := Xiaomi
-PRODUCT_MODEL := Redmi 4A
-PRODUCT_NAME := pa_rolex
+PRODUCT_MODEL := Redmi 5A
+PRODUCT_NAME := pa_riva
 
 # Bootanimation
 TARGET_BOOT_ANIMATION_RES := 720
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 
-TARGET_VENDOR_PRODUCT_NAME := rolex
+TARGET_VENDOR_PRODUCT_NAME := riva
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    TARGET_DEVICE="rolex" \
-    PRODUCT_NAME="rolex" \
-    PRIVATE_BUILD_DESC="rolex-user 7.1.2 N2G47H V9.2.6.0.NCCMIEK release-keys"
+    TARGET_DEVICE="rivax" \
+    PRODUCT_NAME="riva" \
+    PRIVATE_BUILD_DESC="riva-user 7.1.2 N2G47H V9.5.6.0.NCKMIFA release-keys"
 
-BUILD_FINGERPRINT := Xiaomi/rolex/rolex:7.1.2/N2G47H/V9.2.6.0.NCCMIEK:user/release-keys
+BUILD_FINGERPRINT := Xiaomi/riva/riva:7.1.2/N2G47H/V9.5.6.0.NCKMIFA:user/release-keys
 
 endif
