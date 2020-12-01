@@ -1,7 +1,7 @@
 [
     {
         "remote":       "erwinabs",
-        "repository":   "erwinabs/device_xiaomi_rolex",
+        "repository":   "erwinabs/device_xiaomi_riva",
         "target_path":  "device/xiaomi/riva",
         "revision":     "pa"
     },
